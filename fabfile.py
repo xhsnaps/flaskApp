@@ -1,11 +1,10 @@
 import os
 from datetime import datetime
-
-
 from fabric.api import env, local, run, put, lcd, cd, sudo, settings
+from secretconfig import user, password
 
-env.user = 'ho198605'
-env.password = 'I86Gh%FeVc'
+env.user = user
+env.password = password
 
 
 env.sudo_user = 'root'
